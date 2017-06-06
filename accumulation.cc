@@ -44,6 +44,6 @@ void accumulation(const Nan::FunctionCallbackInfo<v8::Value>& info) {
 
 void Init(v8::Local<v8::Object> exports) {
   exports->Set(Nan::New("accumulation").ToLocalChecked(),
-  Nan::New<v8::FunctionTemplate>(EvenAdd)->GetFunction());
+  Nan::New<v8::FunctionTemplate>(accumulation)->GetFunction());
 }
 NODE_MODULE(accumulation, Init)
