@@ -4,4 +4,4 @@
   npm install accumulation;
   var accumulation = require("accumulation");
   console.log(accumulation(1,1000));
-```javascript
+```
